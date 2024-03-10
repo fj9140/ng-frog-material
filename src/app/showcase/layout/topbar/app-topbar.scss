@@ -1,7 +1,13 @@
-:host{
-  >.layout-topbar{
-    >.layout-topbar-inner{
+:host {
+  > .layout-topbar {
+    > .layout-topbar-inner {
+      margin:0 auto;
       height: 4rem;
+      display: flex;
+      align-items: center;
+      @media screen and (min-width: 1920px) {
+        max-width: 1728px;
+      }
     }
   }
 }

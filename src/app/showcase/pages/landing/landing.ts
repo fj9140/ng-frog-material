@@ -8,6 +8,7 @@ import { AppConfigService } from "../../services/appconfig.service";
   templateUrl: './landing.html',
   selector:'landing',
   standalone:true,
+  styleUrl:'./landing.scss',
   imports: [AppTopbarComponent,CommonModule]
 })
 export class LandingComponent {

@@ -1,0 +1,17 @@
+:host{
+  >.landing{
+    >section{
+      padding:70px;
+      @media screen and (min-width: 1660px) {
+        width: 1504px;
+        margin-left:auto;
+        margin-right: auto;
+      }
+      .detail{
+        color: var(--home-secondary-text-color);
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
