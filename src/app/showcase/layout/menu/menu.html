@@ -1,0 +1,20 @@
+<aside>
+  <nav>
+    <ol>
+      <li>Guides</li>
+      <li>
+        <ul>
+          <li *ngFor="let item of guideItems.getAll()">
+            <a [routerLink]="'/guides/'+item.id">{{item.name}}</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Components
+        <ul>
+          <li *ngFor="let item of docItems.getBySection('Components')">{{item.name}}</li>
+        </ul>
+      </li>
+    </ol>
+  </nav>
+</aside>
