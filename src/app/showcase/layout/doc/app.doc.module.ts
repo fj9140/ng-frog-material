@@ -1,5 +1,5 @@
 import { NgModule } from "@angular/core";
-import { AppDoc } from "./app.doc.document";
+import { AppDoc } from "./app.doc";
 
 @NgModule({
   exports:[AppDoc],
