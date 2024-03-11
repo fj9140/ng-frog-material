@@ -1,13 +1,13 @@
 import { Injectable } from "@angular/core";
 
-export interface GuidItem{
+export interface GuideItem{
   id:string;
   name:string,
   document:string,
   overview:string
 }
 
-const GUIDE:GuidItem[]=[
+const GUIDE:GuideItem[]=[
   {
     id:"getting-started",
     name:"Getting Started",
@@ -20,7 +20,10 @@ const GUIDE:GuidItem[]=[
   providedIn:'root'
 })
 export class GuideItems{
-  getAll():GuidItem[]{
+  getAll():GuideItem[]{
     return GUIDE;
+  }
+  getById(id:string){
+    return GUIDE.find(g=>g.id===id);
   }
 }

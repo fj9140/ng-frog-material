@@ -2,12 +2,14 @@ import { Component, Input, OnChanges, SimpleChanges } from "@angular/core";
 import { Title } from "@angular/platform-browser";
 
 @Component({
-  selector: 'app-doc',
-  templateUrl: './app.doc.html'
+  selector: 'doc-viewer',
+  template: 'Loading document...',
+  standalone:true
 })
-export class AppDoc implements OnChanges{
+export class DocViewer implements OnChanges{
   @Input() docTitle:string="";
   @Input() header:string="";
+  docs=true;
 
   constructor(private titleSrv:Title){}
 

@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { LandingComponent } from '../pages/landing/landing';
-import { BuuttonDemo } from '../pages/button/buttondemo';
 import { AppMainComponent } from './app.main.component';
 
 export const routes: Routes = [
@@ -10,13 +9,10 @@ export const routes: Routes = [
     component: AppMainComponent,
     children: [
       {
-        path: 'installation',
-        loadChildren: () =>
-          import('../pages/installation/installation.module').then(
-            (m) => m.InstallationModule
-          ),
+        path:'guides/:id',
+        loadChildren:()=>import('../pages/guide-viewer/guide-viewer').then(m=>m.GuideViewerModule)
+
       },
-      { path: 'button', component: BuuttonDemo },
     ],
   },
 ];

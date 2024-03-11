@@ -8,7 +8,8 @@ import { DocItems } from "../../shared/doc-items/doc-items";
   selector:"app-menu",
   templateUrl:"./menu.html",
   standalone:true,
-  imports:[CommonModule,RouterModule]
+  imports:[CommonModule,RouterModule],
+  styleUrl:'./menu.scss'
 })
 export class AppMenuComponent{
   constructor(public guideItems:GuideItems,public docItems:DocItems){}

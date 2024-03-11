@@ -1,0 +1,10 @@
+:host{
+  .layout-content{
+    display: flex;
+    padding: 6rem 4rem 0;
+    @media screen and (min-width: 1920px) {
+      max-width: 1728px;
+      margin: 0 auto;
+    }
+  }
+}
