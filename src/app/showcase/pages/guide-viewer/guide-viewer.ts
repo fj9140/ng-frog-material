@@ -1,7 +1,9 @@
-import { NgModule,Component } from "@angular/core";
+import { NgModule,Component, Injectable, Input } from "@angular/core";
 import { ActivatedRoute, RouterModule } from "@angular/router";
 import { GuideItem, GuideItems } from "../../shared/guid-items/guid-items";
-import { DocViewer } from "../../layout/doc-viewer/app.doc";
+import { DocViewer } from "../../layout/doc-viewer/doc-viewer";
+
+
 
 @Component({
   templateUrl:'./guide-viewer.html',
@@ -10,6 +12,7 @@ import { DocViewer } from "../../layout/doc-viewer/app.doc";
 })
 export class GuideViewer{
   guide:GuideItem|undefined;
+
 
   constructor(_route:ActivatedRoute,private guideItems:GuideItems){
     _route.params.subscribe({
@@ -21,6 +24,8 @@ export class GuideViewer{
       }
     })
   }
+
+
 }
 
 @NgModule({

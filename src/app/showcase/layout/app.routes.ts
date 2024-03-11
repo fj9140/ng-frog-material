@@ -11,7 +11,6 @@ export const routes: Routes = [
       {
         path:'guides/:id',
         loadChildren:()=>import('../pages/guide-viewer/guide-viewer').then(m=>m.GuideViewerModule)
-
       },
     ],
   },
