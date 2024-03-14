@@ -1,0 +1,12 @@
+load("@build_bazel_rules_nodejs//:index.bzl", "pkg_web")
+load("//tools:defaults.bzl","http_server")
+
+package(default_visibility = ["//visibility:public"])
+
+http_server(
+    name = "devserver",
+    additional_root_paths =[
+      "frogng",
+      "npm/node_modules"
+    ]
+)

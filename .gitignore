@@ -6,6 +6,7 @@
 /out-tsc
 /bazel-out
 /bazel-bin
+/bazel-ng-frog-material
 
 # Node
 /node_modules
