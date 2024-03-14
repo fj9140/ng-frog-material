@@ -1,13 +1,13 @@
 {
-  "name": "frogng",
+  "name": "frogng-srcs",
   "version": "0.0.1",
   "description": "An UI components based on Material Design 3 for Angular",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/fj9140/ng-frog-material.git"
   },
   "engines": {
-    "node": "^20.11.0",
+    "node": "^18.17.0",
     "npm": "^10.2.0",
     "yarn": "^1.22.0"
   },
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.2.1",
+    "@angular/build-tooling": "https://github.com/angular/dev-infra-private-build-tooling-builds.git#3069be882e3e41cdb3dad58788d878e31d7d82e8",
     "@angular/cli": "^17.2.1",
     "@angular/compiler-cli": "^17.2.0",
     "@bazel/bazelisk": "^1.19.0",
