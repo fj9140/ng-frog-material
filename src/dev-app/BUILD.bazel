@@ -5,8 +5,10 @@ package(default_visibility = ["//visibility:public"])
 
 http_server(
     name = "devserver",
+    srcs=[":dev_app_static_files"]
     additional_root_paths =[
       "frogng",
       "npm/node_modules"
-    ]
+    ],
+    enable_dev_ui=True
 )
