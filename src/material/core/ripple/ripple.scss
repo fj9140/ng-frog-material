@@ -1,0 +1,12 @@
+:host{
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  &:hover{
+    background-color: var(--fm-ripple-hover-color,var(--fm-sys-color-on-surface,#1d1b20));
+    opacity: var(--fm-ripple-hover-opacity, 0.08);
+  }
+  ::before{
+
+  }
+}

@@ -15,7 +15,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "dev-app": "ng serve dev-app",
+    "dev-app": "ng serve dev-app --port=4201",
     "build-docs-content": "ts-node ./scripts/build-docs-content.ts",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

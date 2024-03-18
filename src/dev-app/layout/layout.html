@@ -1,1 +1,14 @@
-<button frog-button>123</button>
+<fm-sidenav-container>
+  <fm-sidenav>
+    <fm-nav-list>
+      @for (navItem of navItems;track navItem){
+        <a fm-list-item>{{navItem.name}}</a>
+      }
+    </fm-nav-list>
+  </fm-sidenav>
+  <main>
+    <div>
+      <ng-content></ng-content>
+    </div>
+  </main>
+</fm-sidenav-container>

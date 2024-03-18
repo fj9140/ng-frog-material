@@ -1,0 +1,4 @@
+:host{
+  --_level:var(--fm-elevation-level, 0);
+  --_shadow-color:var(--fm-elevation-shadow-color, var(--fm-sys-color-shadow, #000))
+}

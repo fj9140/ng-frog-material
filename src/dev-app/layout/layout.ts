@@ -1,10 +1,16 @@
 import { Component } from "@angular/core";
-import { FrogButtonModule } from "@frog/material/button";
+import { SidenavModule } from "@frog/material/sidenav";
+import { ListModule } from "@frog/material/list";
+import { RouterModule } from "@angular/router";
 
 @Component({
   selector: "dev-app-layout",
   standalone:true,
   templateUrl:'./layout.html',
-  imports:[FrogButtonModule]
+  imports:[SidenavModule,ListModule,RouterModule]
 })
-export class DevAppLayout{}
+export class DevAppLayout{
+  navItems=[
+    {name:'Button',route:'/button'}
+  ]
+}

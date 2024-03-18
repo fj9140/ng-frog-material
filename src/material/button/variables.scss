@@ -1,0 +1,33 @@
+:host{
+  --_label-text-font: var(--fm-ref-typeface-plain);
+  --_outline-color:var(--fm-sys-color-outline,#79747e);
+  --_outline-width:var(--fm-outlined-button-outline-width,1px);
+  --_container-height:var(--fm-outlined-button-container-height,40px);
+  --_label-text-line-height:var(--fm-outlined-button-label-text-line-height,1.25rem);
+  --_icon-size:var(--fm-outlined-button-icon-size,18px);
+  --_leading-space:var(--fm-outlined-button-leading-space,24px);
+  --_trailing-space:var(--fm-outlined-button-trailing-space,24px);
+  --_label-text-color:var(--fm-outlined-button-label-text-color,var(--md-sys-color-primary,#6750a4));
+  --_label-text-size:var(--fm-outlined-button-label-text-size,var(--fm-sys-typescale-label-large-size,0.875rem));
+  --_container-color:none;
+
+  &[fm-tonal-button]{
+    --_container-color:var(--fm-filled-tonal-button-container-color, var(--fm-sys-color-secondary-container, #e8def8));
+    --_hover-state-layer-color: var(--fm-tonal-button-hover-state-layer-color, var(--fm-sys-color-primary, #6750a4));
+  }
+  &[fm-text-button]{
+    --_hover-state-layer-color: var(--fm-text-button-hover-state-layer-color, var(--fm-sys-color-primary, #6750a4));
+  }
+  &[fm-outlined-button]{
+    --_hover-state-layer-color: var(--fm-text-button-hover-state-layer-color, var(--fm-sys-color-primary, #6750a4));
+  }
+  &[fm-filled-button]{
+    --_hover-state-layer-color: var(--fm-text-button-hover-state-layer-color, var(--fm-sys-color-primary, #6750a4));
+    --_container-color: var(--fm-filled-button-container-color, var(--fm-sys-color-primary, #6750a4));
+    --_label-text-color: var(--fm-filled-button-label-text-color, var(--fm-sys-color-on-primary, #fff));
+  }
+  &[fm-elevated-button]{
+    --_hover-state-layer-color: var(--fm-text-button-hover-state-layer-color, var(--fm-sys-color-primary, #6750a4));
+    --_container-elevation:var(--fm-elevated-button-container-elevation,1)
+  }
+}
