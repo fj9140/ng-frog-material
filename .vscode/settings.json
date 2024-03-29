@@ -1,3 +1,4 @@
 {
-  "bazel.buildifierExecutable": "g:/Code/github/fj9140/ng-frog-material/node_modules/.bin/buildifier-windows-amd64.exe"
+  "bazel.buildifierExecutable": "g:/Code/github/fj9140/ng-frog-material/node_modules/.bin/buildifier-windows-amd64.exe",
+  "terminal.integrated.defaultProfile.windows": "Git Bash"
 }

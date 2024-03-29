@@ -43,7 +43,8 @@
   }
   &[fm-filled-button] {
     background-color: var(--_container-color);
-
-
   }
+
+  --fm-ripple-pressed-color:var(--_pressed-state-layer-color);
+  --fm-ripple-pressed-opacity: var(--_pressed-state-layer-opacity);
 }

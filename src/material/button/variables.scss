@@ -11,12 +11,17 @@
   --_label-text-size:var(--fm-outlined-button-label-text-size,var(--fm-sys-typescale-label-large-size,0.875rem));
   --_container-color:none;
 
+
+
   &[fm-tonal-button]{
     --_container-color:var(--fm-filled-tonal-button-container-color, var(--fm-sys-color-secondary-container, #e8def8));
     --_hover-state-layer-color: var(--fm-tonal-button-hover-state-layer-color, var(--fm-sys-color-primary, #6750a4));
   }
   &[fm-text-button]{
     --_hover-state-layer-color: var(--fm-text-button-hover-state-layer-color, var(--fm-sys-color-primary, #6750a4));
+    --_pressed-state-layer-color:var(--fm-text-button-pressed-state-layer-color,var(--fm-sys-color-primary, #6750a4));
+    --_pressed-state-layer-opacity: var(--fm-text-button-pressed-state-layer-opacity, 0.12);
+
   }
   &[fm-outlined-button]{
     --_hover-state-layer-color: var(--fm-text-button-hover-state-layer-color, var(--fm-sys-color-primary, #6750a4));
@@ -28,6 +33,6 @@
   }
   &[fm-elevated-button]{
     --_hover-state-layer-color: var(--fm-text-button-hover-state-layer-color, var(--fm-sys-color-primary, #6750a4));
-    --_container-elevation:var(--fm-elevated-button-container-elevation,1)
+    --_container-elevation:var(--fm-elevated-button-container-elevation,1);
   }
 }
